@@ -1,0 +1,50 @@
+/*
+    @Time       : 2020/11/14 23:32 
+    @Author     : MYH            
+    @File       : index.css
+    @Software   : WebStorm
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    width: 100%;
+    height: 8vh;
+    background-color: black;
+}
+
+.header .logo{
+    width: auto;
+    height: 100%;
+    margin-left: 10%;
+}
+
+.content{
+    width: 100%;
+    height: 84vh;
+    background-color: yellow;
+}
+
+.content .leftContent{
+    width: 24%;
+    height: 100%;
+    float: left;
+    background-color: pink;
+}
+
+.content .rightContent{
+    width: 76%;
+    height: 100%;
+    float: right;
+    background-color: deeppink;
+}
+
+
+.footer{
+    width: 100%;
+    height: 8vh;
+    background-color: yellowgreen;
+}
