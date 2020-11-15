@@ -2,9 +2,6 @@ function check() {
     var name = $(".username").val()
     var password = $(".userpassword").val()
 
-    // alert("name" + name)
-    // alert("password" + password)
-
     if (name === "") {
         alert("用户名不能为空");
         $(".username").focus();
