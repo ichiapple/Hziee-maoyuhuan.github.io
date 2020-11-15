@@ -33,6 +33,15 @@
     height: 100%;
     float: left;
     background-color: pink;
+    text-align: center;
+}
+
+.content .leftContent .head img{
+    width: 200px;
+    margin: 50px auto;
+    border-radius: 50%;
+    border: 2px solid gray;
+    box-shadow: black 10px 10px 60px;
 }
 
 .content .rightContent{
