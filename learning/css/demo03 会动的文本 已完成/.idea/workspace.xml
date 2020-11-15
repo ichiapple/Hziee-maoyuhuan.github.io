@@ -19,7 +19,20 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="32151672-dd7d-4c98-935d-aea7603e3579" name="Default Changelist" comment="" />
+    <list default="true" id="2393a0ab-e797-4ac3-be32-be8094a51334" name="默认的" comment="">
+      <change afterPath="$PROJECT_DIR$/../demo01 简洁的登陆页面/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo01 简洁的登陆页面/.idea/demo01 简洁的登陆页面.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo01 简洁的登陆页面/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo01 简洁的登陆页面/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo01 简洁的登陆页面/css/login.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo01 简洁的登陆页面/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/demo03 会动的文本.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../login/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../login/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -28,16 +41,16 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
   </component>
-  <component name="ProjectId" id="1kHusYhIlTj49rUAYpE5KUzFq2W" />
+  <component name="ProjectId" id="1kJoKnmQC9e0Q4grLIYpQsz7oet" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
-    <ConfirmationsSetting value="2" id="Add" />
+    <ConfirmationsSetting value="2" id="新增" />
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -48,18 +61,18 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="32151672-dd7d-4c98-935d-aea7603e3579" name="Default Changelist" comment="" />
-      <created>1605370044921</created>
+      <changelist id="2393a0ab-e797-4ac3-be32-be8094a51334" name="默认的" comment="" />
+      <created>1605427993516</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1605370044921</updated>
-      <workItem from="1605370046015" duration="488000" />
-      <workItem from="1605419600057" duration="1402000" />
+      <updated>1605427993516</updated>
+      <workItem from="1605427994771" duration="1557000" />
     </task>
     <servers />
   </component>

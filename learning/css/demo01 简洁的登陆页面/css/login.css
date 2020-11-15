@@ -1,0 +1,126 @@
+/*
+    @Time       : 2020/11/15 14:18 
+    @Author     : MYH            
+    @File       : login.css
+    @Software   : WebStorm
+*/
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    height: 100%;
+    transition: .2s;
+}
+
+body {
+    background-image: linear-gradient(to bottom right, rgb(88, 126, 252), rgb(236, 151, 255));
+}
+
+body .login-container {
+    width: 600px;
+    margin: 0 auto;
+    margin-top: 20%;
+    box-shadow: 0 0 30px rgb(59, 45, 159);
+    border-radius: 30px;
+}
+
+body .login-container .leftContainer {
+    display: inline-block;
+    width: 340px;
+    padding: 50px;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    background-image: linear-gradient(to bottom right, rgb(118, 76, 63), rgb(92, 103, 211));
+}
+
+body .login-container .leftContainer .title {
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+body .login-container .leftContainer .title span {
+    border-bottom: 3px solid yellow;
+}
+
+body .login-container .leftContainer .inputContainer {
+    padding: 20px 0;
+}
+
+body .login-container .leftContainer .inputContainer input {
+    border: 0;
+    background: none;
+    outline: 0;
+    color: white;
+    margin-top: 15px;
+    padding: 5px;
+    border-bottom: 3px white solid;
+    display: block;
+    width: 100%;
+    transition: .3s;
+}
+
+body .login-container .leftContainer .inputContainer input:hover {
+    border-bottom-color: yellow;
+}
+
+::-webkit-input-placeholder {
+    color: white;
+}
+
+body .login-container .leftContainer .messageBox {
+    margin-top: 15px;
+    color: whitesmoke;
+    transition: .3s;
+    font-size: 14px;
+}
+
+body .login-container .rightContainer {
+    width: 155px;
+    display: inline-block;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    vertical-align: top;
+    height: 319.73px;
+    position: relative;
+    background-image: linear-gradient(to bottom left, rgb(118, 76, 63), rgb(92, 103, 211));
+}
+
+body .login-container .rightContainer .registerContainer {
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 60px;
+}
+
+body .login-container .rightContainer .registerContainer span {
+    border-bottom: 3px solid yellow;
+    margin-top: 50px;
+    font-weight: bold;
+}
+
+body .login-container .rightContainer .actionContainer {
+    font-size: 20px;
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+}
+
+body .login-container .rightContainer .actionContainer span {
+    padding: 15px;
+    color: white;
+    font-weight: bold;
+    border: 1px solid yellow;
+    box-shadow: yellow 0 0 40px;
+    display: inline;
+    line-height: 40px;
+    border-radius: 80px;
+    transition: .3s;
+}
+
+body .login-container .rightContainer .actionContainer span:hover {
+    background-color: rebeccapurple;
+}

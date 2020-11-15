@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>线条字_会动的文本</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+<div class="container">
+
+
+    <svg viewBox="0 0 1000 300">
+        <symbol id="lineText">
+            <text text-anchor="middle" x="50%" y="50%" dy=".4em">
+                Mao Yuhuan
+            </text>
+        </symbol>
+        <use xlink:href="#lineText" class="text"></use>
+        <use xlink:href="#lineText" class="text"></use>
+        <use xlink:href="#lineText" class="text"></use>
+        <use xlink:href="#lineText" class="text"></use>
+    </svg>
+</div>
+</body>
+</html>
