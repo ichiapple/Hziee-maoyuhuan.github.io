@@ -19,7 +19,18 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b45d6948-c14b-4c17-a438-88bbd78ad43c" name="Default Changelist" comment="" />
+    <list default="true" id="b45d6948-c14b-4c17-a438-88bbd78ad43c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/css/contentStyle.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fonts/codropsicons/codropsicons.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fonts/codropsicons/codropsicons.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fonts/codropsicons/codropsicons.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fonts/codropsicons/codropsicons.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fonts/codropsicons/license.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -48,6 +59,7 @@
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/js" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -56,6 +68,14 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\MYH\Documents\GitHub\Hziee-maoyuhuan.github.io\index\js" />
+      <recent name="C:\Users\MYH\Documents\GitHub\Hziee-maoyuhuan.github.io\index" />
+      <recent name="C:\Users\MYH\Documents\GitHub\Hziee-maoyuhuan.github.io\index\img" />
+      <recent name="C:\Users\MYH\Documents\GitHub\Hziee-maoyuhuan.github.io\index\css" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -67,7 +87,10 @@
       <updated>1605367918748</updated>
       <workItem from="1605367919857" duration="1486000" />
       <workItem from="1605430278692" duration="440000" />
-      <workItem from="1605454618230" duration="3431000" />
+      <workItem from="1605454618230" duration="3492000" />
+      <workItem from="1605486344545" duration="265000" />
+      <workItem from="1605510439869" duration="605000" />
+      <workItem from="1605511114048" duration="2986000" />
     </task>
     <servers />
   </component>
@@ -90,9 +113,17 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="940" y="314" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1605512868715">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="940" y="314" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1605512868715" />
     <state x="9" y="159" width="995" height="801" key="dock-window-1" timestamp="1605456160711">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="9" y="159" width="995" height="801" key="dock-window-1/0.0.1920.1080@0.0.1920.1080" timestamp="1605456160711" />
+    <state x="489" y="259" key="run.anything.popup" timestamp="1605511302866">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="489" y="259" key="run.anything.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1605511302866" />
   </component>
 </project>

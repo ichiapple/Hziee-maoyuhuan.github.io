@@ -12,21 +12,24 @@
 
 body{
     width: 100%;
-    height: 100vh;
+    height: 92vh;
 }
 
 .header{
     width: 100%;
     height: 8vh;
     background-color: black;
+    position: fixed;
+    left: 0;
+    top: 0;
 }
 
 .header .logo{
     width: auto;
-    height: 80%;
+    height: 75%;
     float: left;
     margin-top: 0.8vh;
-    margin-left: 4%;
+    margin-left: 2%;
     border-radius: 10px;
 }
 
@@ -48,18 +51,22 @@ body{
 
 .content{
     width: 100%;
-    height: 84vh;
+    margin-top: 8vh;
+    height: 92vh;
     background-color: yellow;
 }
 
 .content .leftContent{
     width: 24%;
-    height: 100%;
+    height: calc(100% - 8vh);
     float: left;
     background-color: whitesmoke;
     text-align: center;
     border-right: 1px black solid;
     box-sizing: border-box;
+    position: fixed;
+    left: 0;
+    top: 8vh;
 }
 
 .content .leftContent .head img{
@@ -70,46 +77,27 @@ body{
     box-shadow: black 10px 10px 60px;
 }
 
-.content .rightContent{
+.content .leftContent .options{
+    margin: 6vh auto;
+    width: 60%;
     font-weight: bold;
+    font-size: 30px;
+}
+
+.content .leftContent .options li{
+    list-style: none;
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: yellow;
+    border: 4px solid orange;
+    transform: skew(-20deg);
+    border-radius: 20px 0 ;
+    box-shadow: darkorange 5px  5px 30px ;
+}
+
+.content .rightContent{
     width: 76%;
     height: 100%;
     float: right;
     background-color: white;
-    padding: 50px;
-    box-sizing: border-box;
-
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 40px;
-}
-
-.content .rightContent .primary_title{
-    /*width: 25%;*/
-    /*height: 20vh;*/
-    background-color: black;
-    display: block;
-    text-decoration: none;
-    border-radius: 40px;
-    box-shadow: black 10px 10px 40px;
-}
-
-.content .rightContent .primary_title .secondary_title{
-    padding: 20px;
-    text-align: center;
-    color: whitesmoke;
-}
-
-.content .rightContent .primary_title .secondary_title .contentTitle{
-    margin-bottom: 3vh;
-}
-
-.content .rightContent .primary_title .secondary_title .contentDetail{
-
-}
-
-.footer{
-    width: 100%;
-    height: 8vh;
-    background-color: yellowgreen;
 }
