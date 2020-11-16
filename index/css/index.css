@@ -95,6 +95,12 @@ body{
     box-shadow: darkorange 5px  5px 30px ;
 }
 
+.content .leftContent .options li a{
+    text-decoration: none;
+    color: black;
+}
+
+
 .content .rightContent{
     width: 76%;
     height: 100%;
