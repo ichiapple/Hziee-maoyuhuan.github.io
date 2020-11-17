@@ -1,0 +1,76 @@
+<!--
+    @Time       : 2020/7/25 7:43
+    @Author     : MYH
+    @File       : index.html
+    @Software   : WebStorm
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>音乐播放器</title>
+
+    <!--    css部分-->
+    <link rel="stylesheet" href="css/playerCss.css">
+
+    <!--    js部分-->
+    <!-- vue的开发环境版本，包含了有帮助的命令行警告 -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <!--    网络请求库axios的引入-->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+</head>
+<body>
+
+<div id="player">
+    <!--    顶部-->
+    <div id="playerHeader">
+        <div id="logo">
+            <img id="img_logo" src="img/pic.png" alt="logo找不到了">
+        </div>
+        <div id="search">
+            <label for="inputText">搜索:&nbsp;&nbsp;</label>
+            <input id="inputText" type="text" placeholder="键入搜索内容.." v-model="queryText" @keyup.enter="queryMusic">&nbsp;
+            <input type="button" value="搜索" @click="queryMusic">
+        </div>
+    </div>
+    <!--    中部-->
+    <div id="playerContent">
+        <div id="musicList">
+            <ul>
+                <li v-for="(item,index) in musicList" @dblclick="playMusic(item.id)">
+                    <img src="img/play.png" alt="图片丢失了.." @click="playMusic(item.id)">
+                    <span>{{index+1}}. {{item.name}}</span><br>
+                    <a v-if="item.mvid!==0" class="mvBtn" href="javascript:" @click="showMV(item.mvid)">播放MV</a>
+                </li>
+            </ul>
+        </div>
+        <div id="albumShow">
+            <img id="albumShowImg" :src="songPicUrl" alt="没有图片了哦.." v-if="songPicUrl!==''">
+        </div>
+        <div id="comment">
+            <ul>
+                <li v-for="(item,index) in commentList">
+                    <img class="commentImg" :src="item.user.avatarUrl" alt="图片丢失了.." @click="playMusic(item.id)">
+                    <b>{{item.user.nickname}}</b>
+                    <p>&nbsp;&nbsp;{{item.content}}</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--    底部-->
+    <div id="playerFoot">
+        <audio class="audio_bar" ref="audio" :src="audioUrl" @play="startMusic" @pause="pauseMusic" controls autoplay loop
+               v-if="audioUrl!==''"></audio>
+    </div>
+
+    <div id="shadow" v-if="showShadow===true">
+        <video :src="videoUrl" controls="controls" loop autoplay></video>
+        <div id="hint" @click="closeMV"></div>
+    </div>
+</div>
+
+<script src="js/playerJavascript.js"></script>
+</body>
+</html>
