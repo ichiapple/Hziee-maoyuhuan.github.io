@@ -19,7 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef612112-0d37-4d2f-a61e-98470427cdec" name="默认的" comment="" />
+    <list default="true" id="ef612112-0d37-4d2f-a61e-98470427cdec" name="默认的" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -64,7 +66,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1605623371900</updated>
-      <workItem from="1605623373137" duration="2273000" />
+      <workItem from="1605623373137" duration="2634000" />
     </task>
     <servers />
   </component>
