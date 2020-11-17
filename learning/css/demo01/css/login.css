@@ -21,7 +21,7 @@ body {
 body .login-container {
     width: 600px;
     margin: 0 auto;
-    margin-top: 20%;
+    margin-top: 15%;
     box-shadow: 0 0 30px rgb(59, 45, 159);
     border-radius: 30px;
 }
@@ -83,7 +83,7 @@ body .login-container .rightContainer {
     border-top-right-radius: 30px;
     border-bottom-right-radius: 30px;
     vertical-align: top;
-    height: 319.73px;
+    height: 321px;
     position: relative;
     background-image: linear-gradient(to bottom left, rgb(118, 76, 63), rgb(92, 103, 211));
 }
@@ -113,12 +113,13 @@ body .login-container .rightContainer .actionContainer span {
     padding: 15px;
     color: white;
     font-weight: bold;
-    border: 1px solid yellow;
-    box-shadow: yellow 0 0 40px;
+    border: 1px solid gray;
+    box-shadow: grey 0 0 40px;
     display: inline;
     line-height: 40px;
     border-radius: 80px;
     transition: .3s;
+    background-color: mediumpurple;
 }
 
 body .login-container .rightContainer .actionContainer span:hover {

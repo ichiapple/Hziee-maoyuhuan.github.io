@@ -1,0 +1,90 @@
+/*
+    @Time       : 2020/11/17 22:32 
+    @Author     : MYH            
+    @File       : index.css
+    @Software   : WebStorm
+*/
+
+@import "fonts_badScript.css";
+
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #000;
+    font-family: 'Bad Script', cursive;
+}
+
+h1{
+    margin: 0;
+    padding: 0;
+    color: whitesmoke;
+    font-size: 6em;
+}
+
+h1 span{
+    display: table-cell;
+    margin: 0;
+    padding: 0 5px;
+    animation: animate 5s linear infinite;
+    color: #6664;
+
+}
+
+h1 span:nth-child(1){
+    animation-delay: 0.0s;
+}
+h1 span:nth-child(2){
+    animation-delay: 0.4s;
+}
+h1 span:nth-child(3){
+    animation-delay: 0.8s;
+}
+h1 span:nth-child(4){
+    animation-delay: 1.2s;
+}
+h1 span:nth-child(5){
+    animation-delay: 1.6s;
+}
+h1 span:nth-child(6){
+    animation-delay: 2.0s;
+}
+h1 span:nth-child(7){
+    animation-delay: 2.4s;
+}
+h1 span:nth-child(8){
+    animation-delay: 2.8s;
+}
+h1 span:nth-child(9){
+    animation-delay: 3.2s;
+}
+h1 span:nth-child(10){
+    animation-delay: 3.6s;
+}
+
+@keyframes animate {
+    0%, 100%{
+        color: #5ad2ff;
+        filter: blur(2px);
+        text-shadow:
+            0 0 10px #00b3ff,
+            0 0 20px #00b3ff,
+            0 0 40px #00b3ff,
+            0 0 80px #00b3ff,
+            0 0 120px #00b3ff,
+            0 0 160px #00b3ff,
+            0 0 200px #00b3ff,
+            0 0 370px #00b3ff,
+            0 0 580px #00b3ff,
+            0 0 920px #00b3ff;
+    }
+    7%, 93%{
+        color:#6664;
+        filter: blur(0px);
+        text-shadow: none;
+    }
+
+}
