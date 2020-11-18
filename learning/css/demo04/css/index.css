@@ -1,0 +1,42 @@
+/*
+    @Time       : 2020/11/18 11:22 
+    @Author     : MYH            
+    @File       : index.css
+    @Software   : WebStorm
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: radial-gradient(#1bff0e, #30f8ff);
+}
+
+.text{
+    font-size: 60px;
+    color: whitesmoke;
+    font-weight: bold;
+    letter-spacing: 6px;
+}
+
+.text .shine{
+    color: black;
+    animation: flash 0.9s ease-in-out infinite;
+}
+
+@keyframes flash {
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity:0;
+    }
+}
