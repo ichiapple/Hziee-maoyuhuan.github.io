@@ -1,0 +1,55 @@
+/*
+    @Time       : 2020/11/18 14:26 
+    @Author     : MYH            
+    @File       : index.css
+    @Software   : WebStorm
+*/
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000000;
+}
+
+h1{
+    position: relative;
+    text-transform: uppercase;
+    color: #222a;
+    /* 1rem = 16px */
+    font-size: 10rem;
+}
+
+h1:after{
+    content: 'Mao Yuhuan';
+    position: absolute;
+    top: 0;
+    left: 0;
+    /*文字透明*/
+    color: transparent;
+    background-image: linear-gradient(to right,#c23616, #3c6be8, #00d2d3,yellow, greenyellow);
+    /*背景绘制区域 当值为text的时候,代表设置了文字的镂空效果 但是前提是文字必须为透明色*/
+    /*background-clip: text;*/
+    /*谷歌浏览器私有属性*/
+    -webkit-background-clip: text;
+    /*利用裁剪创建元素可以显示的区域 circle表示是一个圆形区域 直径100px 后两个参数表示圆心位置*/
+    /*clip-path: circle(60px at 0 50%);*/
+    /*设置动画*/
+    animation: move 7s ease-in-out infinite;
+}
+
+/*设置move动画*/
+@keyframes move {
+    0%, 100%{
+        clip-path: circle(90px at 0 50%);
+    }
+    50%{
+        clip-path: circle(90px at 100% 50%);
+    }
+}
