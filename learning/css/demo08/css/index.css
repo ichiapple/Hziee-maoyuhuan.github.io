@@ -1,0 +1,101 @@
+/*
+    @Time       : 2020/11/18 16:26 
+    @Author     : MYH            
+    @File       : index.css
+    @Software   : WebStorm
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #ccc;
+}
+
+.slide {
+    position: relative;
+    margin: 100px auto;
+    width: 800px;
+    height: 500px;
+    border-radius: 40px;
+    text-align: center;
+    font-family: Arial, serif;
+    overflow: hidden;
+    color: white;
+    box-shadow: gold 0 0 60px;
+}
+
+.slide ul {
+    margin: 0 auto;
+    padding: 0;
+    width: 300%;
+    height: 100%;
+    box-sizing: border-box;
+    transition: all .5s;
+}
+
+.slide ul li {
+    list-style: none;
+    float: left;
+    width: 800px;
+    height: 100%;
+    line-height: 500px;
+    font-size: 50px;
+}
+
+.slide ul li:nth-child(1) {
+    background-color: yellow;
+}
+
+.slide ul li:nth-child(2) {
+    background-color: greenyellow;
+}
+
+.slide ul li:nth-child(3) {
+    background-color: deepskyblue;
+}
+
+.slide input[name="button"] {
+    display: none;
+}
+
+.slide label[for^="button"] {
+    position: absolute;
+    bottom: 20px;
+    width: 20px;
+    height: 20px;
+    margin: 0 auto;
+    line-height: 20px;
+    background-color: mediumslateblue;
+    color: white;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: .3s;
+    border: 1px solid #000;
+}
+
+.slide label[for="button1"] {
+    left: 44%;
+}
+
+.slide label[for="button2"] {
+    left: 49%;
+}
+
+.slide label[for="button3"] {
+    left: 54%;
+}
+
+#button1:checked ~ ul {
+    margin-left: 0;
+}
+
+#button2:checked ~ ul {
+    margin-left: -800px;
+}
+
+#button3:checked ~ ul {
+    margin-left: -1600px;
+}
