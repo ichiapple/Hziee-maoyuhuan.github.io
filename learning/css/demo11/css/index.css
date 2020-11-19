@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css?family=Popins:100,200,300,4000,500,600,700,800,900');
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #060c21;
+    font-family: 'Popins', sans-serif;
+    overflow: hidden;
+}
+
+.box {
+    position: relative;
+    padding: 20px;
+    width: 350px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #060c21;
+}
+
+.box:before {
+    content: " ";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background-color: #fff;
+    z-index: -1;
+}
+
+.box:after {
+    content: " ";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background-color: #fff;
+    z-index: -2;
+    filter: blur(40px);
+}
+
+.box:before,
+.box:after {
+    background: linear-gradient(235deg, #00ff15, #ffdd11);
+}
+
+.content {
+    padding: 20px;
+    color: whitesmoke;
+    font-weight: bold;
+}
+
+.content h1 {
+    padding-bottom: 20px;
+}
