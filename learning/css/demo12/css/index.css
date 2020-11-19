@@ -3,6 +3,16 @@
     padding: 0;
 }
 
+.contain {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 40px 0;
+    width: 240px;
+}
+
 html,
 body {
     box-sizing: border-box;
@@ -10,11 +20,88 @@ body {
     height: 100%;
 }
 
-.button {
+.buttons {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     text-align: center;
+    width: 100%;
     margin: 0 auto;
+}
+
+h1 {
+    text-align: left;
+    letter-spacing: 0.05em;
+    color: #333;
+    margin: 0 0 0.4em;
+    font-size: 1em;
+}
+
+.btn {
+    letter-spacing: 0.1em;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 45px;
+    max-width: 160px;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+.btn:hover {
+    text-decoration: none;
+}
+
+.effect {
+    color: #ffffff;
+    border: 4px solid #000;
+    box-shadow: 0 0 0 1px #000 inset;
+    background-color: #000000;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+}
+
+.effect:hover {
+    border: 4px solid #666;
+    box-shadow: 0 0 4px #eeeeee inset;
+    background-color: #fff;
+}
+
+.effect span {
+    transition: all 0.2s ease-in-out;
+    z-index: 2;
+}
+
+.effect:hover span {
+    letter-spacing: 0.13em;
+    color: #333333;
+}
+
+.effect::after {
+    background: #fff;
+    border: 0 solid #000;
+    content: "";
+    height: 155px;
+    left: -75px;
+    position: absolute;
+    opacity: 0.8;
+    top: -50px;
+    -webkit-transform: rotate(35deg);
+    transform: rotate(35deg);
+    width: 50px;
+    transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+    z-index: 1;
+}
+
+.effect:hover::after {
+    background: #fff;
+    border: 20px solid #000;
+    opacity: 0;
+    left: 120%;
+    -webkit-transform: rotate(40deg);
+    transform: rotate(40deg);
 }
