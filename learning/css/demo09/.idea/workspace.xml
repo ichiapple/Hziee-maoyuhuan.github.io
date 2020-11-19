@@ -19,12 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4f538e4e-4a5d-4fe5-9912-96f34c2811e8" name="默认的" comment=".">
-      <change afterPath="$PROJECT_DIR$/../../python/testProj/.idea/other.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../python/testProj/test/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../python/testProj/test/找色差.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../python/testProj/.idea/testProj.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../python/testProj/.idea/testProj.iml" afterDir="false" />
-    </list>
+    <list default="true" id="4f538e4e-4a5d-4fe5-9912-96f34c2811e8" name="默认的" comment="." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -78,7 +73,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1605689731628</updated>
-      <workItem from="1605689732808" duration="3505000" />
+      <workItem from="1605689732808" duration="4105000" />
     </task>
     <task id="LOCAL-00001" summary=".">
       <created>1605695002767</created>

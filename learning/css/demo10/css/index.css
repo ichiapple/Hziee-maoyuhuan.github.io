@@ -1,0 +1,62 @@
+body, div, h1, h2, form, fieldset, input, textarea, footer, p{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: none;
+}
+
+body{
+    background: #fff;
+    color: black;
+    font-family: tahoma;
+}
+
+p{
+    font-size: 24px;
+}
+
+.wrap{
+    width: 530px;
+    margin: 20px auto 0;
+    height: 800px;
+}
+
+h1{
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 35px;
+    font-family: tahoma;
+    color: gray;
+}
+
+.form-wrap{
+    overflow: hidden;
+    height: 447px;
+    position: relative;
+    top: 0;
+    transition: all 1s ease-in-out .3s;
+}
+
+.form-wrap:before{
+    content:"";
+    position: absolute;
+    bottom: 128px;
+    left: 0;
+    background-color:#0006;
+    width: 530px;
+    height: 317px;
+}
+
+.form-wrap::after{
+    content: "";
+    position: absolute;
+    bottom: 0;left: 0;
+    background-color: #000d;
+    width: 530px;
+    height: 260px;
+}
+
+.form-wrap.hide:hover{
+    height: 777px;
+    top: -200px;
+}
