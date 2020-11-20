@@ -1,0 +1,118 @@
+// reset CSS
+body {
+    margin: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+    outline: none;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+// 定义初始化颜色
+// 基准大小 14px
+html {
+    font-size: 14px;
+}
+
+// 颜色定义 color
+$color: ( 'primary': rgb(229, 57, 78), 'black': black, 'white': white, 'gray1': #fafafa, 'gray2': rgba(26, 26, 26, 0.5));
+@each $key,
+$value in $color {
+    .text-#{$key} {
+        color: $value;
+    }
+    .bg-#{$key} {
+        background-color: $value;
+    }
+}
+
+// 布局定义 text lay
+@each $val in (left, center, right) {
+    .text-#{$val} {
+        text-align: $val;
+    }
+}
+
+// 元素布局 使用数组+循环进行遍历创建css布局项
+// flex
+.d-flex {
+    display: flex;
+}
+
+.flex-grow-1 {
+    flex-grow: 1;
+}
+
+.flex-1 {
+    flex: 1;
+}
+
+// justify-content
+$flex-jc:( 'start':flex-start, 'end':flex-end, 'center':flex-center, between: space-between, around: space-around);
+@each $jcKey,
+$jcVal in $flex-jc {
+    .jc-#{$jcKey} {
+        justify-content: $jcVal;
+    }
+}
+
+// align-items
+$flex-ai: ( start: flex-start, end: flex-end, center: flex-center);
+@each $aiKey,
+$aiVal in $flex-ai {
+    .ai-#{$aiKey} {
+        align-items: $aiVal;
+    }
+}
+
+// text size
+$text-size-base: 1rem;
+$text-size:( xs:0.8571, sm:1, md:1.1429, lg:1.4286);
+@each $txKey,
+$txVal in $text-size {
+    .text-#{$txKey} {
+        font-size: $txVal*$text-size-base;
+    }
+}
+
+// 边距
+$spacing-types:(m:margin, p:padding);
+$spacing-directions:(t:top, b:bottom, l:left, r:right);
+$spacing-sizes:(0:0, 1:0.25, 2:0.5, 3:1, 4:1.5, 5:3);
+$spacigng-size-base: 1rem;
+@each $typeKey,
+$typeVal in $spacing-types {
+    @each $directionsKey,
+    $directionsVal in $spacing-directions {
+        @each $sizeKey,
+        $sizeVal in $spacing-sizes {
+            .#{typeKey}#{$directionsKey}-#{$sizeKey} {
+                #{$typeKey}-#{$typeVal}: $sizeVal*$spacigng-size-base;
+            }
+        }
+    }
+}
+
+// 字体宽度
+$text-weight:( 1:100, 2:200, 3:300, 4:400, 5:500, 6:600, 7:700, 8:800, 9:900);
+@each $twKey,
+$twVal in $text-weight {
+    .text-weight-#{$twKey} {
+        font-weight: #{$twVal};
+    }
+}
+
+// 元素定位 position
