@@ -116,3 +116,21 @@ $twVal in $text-weight {
 }
 
 // 元素定位 position
+.pos-a {
+    position: absolute;
+}
+
+.pos-r {
+    position: relative;
+}
+
+$pos-sizes: ( 0: 0, 1: 0.25, 2: 0.5, 3: 1, 4: 1.5, 5: 3);
+$pos-size-base: 1rem;
+@each $directVal in (left, top, right, bottom) {
+    @each $sizeKey,
+    $sizeVal in $pos-sizes {
+        .#{$directVal}-#{$sizeKey} {
+            #{$directVal}: $pos-size-base*$sizeVal;
+        }
+    }
+}
