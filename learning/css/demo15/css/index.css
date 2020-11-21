@@ -1,0 +1,193 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: consolas;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    /*纵向排列*/
+    flex-direction: column;
+    background-color: #000d;
+}
+
+a {
+    position: relative;
+    display: inline-block;
+    padding: 25px 30px;
+    color: deepskyblue;
+    margin: 40px 0;
+    font-size: 24px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    letter-spacing: 4px;
+}
+
+a:hover {
+    background-color: skyblue;
+    color: red;
+    box-shadow: deepskyblue 0 0 15px, orange 0 0 55px, palegoldenrod 0 0 75px, rgb(11, 255, 23) 0 0 200px;
+}
+
+a span {
+    position: absolute;
+    display: block;
+}
+
+
+/* a span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, skyblue);
+    animation: animate1 4s linear infinite;
+}
+
+a span:nth-child(2) {
+    top: -100%;
+    left: 100%;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(0deg, skyblue, transparent);
+    animation: animate2 1s linear infinite;
+    animation-delay: 2s;
+}
+
+a span:nth-child(3) {
+    top: 100%;
+    left: 100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, skyblue, transparent);
+    animation: animate3 4s linear infinite;
+    animation-delay: 2.5s;
+}
+
+a span:nth-child(4) {
+    top: 100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(0deg, transparent, skyblue);
+    animation: animate4 1s linear infinite;
+    animation-delay: 4.5s;
+}
+
+@keyframes animate1 {
+    0% {
+        left: -100%;
+    }
+    100% {
+        left: 100%;
+    }
+}
+
+@keyframes animate2 {
+    0% {
+        top: -100%;
+    }
+    100% {
+        top: 100%;
+    }
+}
+
+@keyframes animate3 {
+    0% {
+        left: 100%;
+    }
+    100% {
+        left: -100%;
+    }
+}
+
+@keyframes animate4 {
+    0% {
+        top: 100%;
+    }
+    100% {
+        top: 0%;
+    }
+} */
+
+a span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(90deg, transparent, skyblue);
+    animation: animation1 1s linear 0.25s infinite;
+}
+
+@keyframes animation1 {
+    0% {
+        left: -100%;
+    }
+    50%,
+    100% {
+        left: 100%;
+    }
+}
+
+a span:nth-child(2) {
+    top: -100%;
+    left: calc(100% - 3px);
+    width: 3px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, skyblue);
+    animation: animation2 1s linear 0.5s infinite;
+}
+
+@keyframes animation2 {
+    0% {
+        top: -calc(100% - 3px);
+    }
+    50%,
+    100% {
+        top: calc(100% - 3px);
+    }
+}
+
+a span:nth-child(3) {
+    top: calc(100% - 3px);
+    left: 100%;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(270deg, transparent, skyblue);
+    animation: animation3 1s linear 0.75s infinite;
+}
+
+@keyframes animation3 {
+    0% {
+        left: calc(100% - 3px);
+    }
+    50%,
+    100% {
+        left: -100%;
+    }
+}
+
+a span:nth-child(4) {
+    top: 100%;
+    left: 0%;
+    width: 3px;
+    height: 100%;
+    background: linear-gradient(0deg, transparent, skyblue);
+    animation: animation4 1s linear 1s infinite;
+}
+
+@keyframes animation4 {
+    0% {
+        top: 100%;
+    }
+    50%,
+    100% {
+        top: -100%;
+    }
+}
