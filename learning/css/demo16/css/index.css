@@ -1,0 +1,127 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.box {
+    width: 800px;
+    height: 800px;
+    background-color: #000000;
+    margin: 20px auto;
+    padding-top: 20px;
+}
+
+.contrast {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    position: relative;
+    filter: contrast(15);
+    animation: rotateAni 8s linear infinite;
+}
+
+.circle {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    margin-left: -150px;
+    /* border: 1px solid #fff; */
+    filter: blur(8px);
+    animation: circleRotate 4s linear infinite;
+}
+
+.circle::before {
+    content: "";
+    width: 200px;
+    height: 200px;
+    background: #00ff0f;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 42% 38% 62% 49% / 45%;
+}
+
+.circle::after {
+    content: "";
+    width: 178px;
+    height: 176px;
+    background: #000000;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+}
+
+@keyframes rotateAni {
+    0% {
+        filter: contrast(15) hue-rotate(0);
+    }
+    100% {
+        filter: contrast(15) hue-rotate(360deg);
+    }
+}
+
+@keyframes circleRotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.battery {
+    color: white;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    line-height: 200px;
+    font-size: 30px;
+    font-weight: bold;
+    position: absolute;
+    left: calc(50% - 100px);
+    top: 6%;
+    z-index: 9;
+}
+
+.bubble_home {
+    width: 150px;
+    height: 50px;
+    background-color: #00ff0f;
+    position: absolute;
+    bottom: 0;
+    left: calc(50% - 75px);
+    border-radius: 75px 75px 25px 25px;
+    filter: blur(8px);
+}
+
+.bubble {
+    width: 20px;
+    height: 20px;
+    background-color: #00ff0f;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 0);
+    z-index: 100;
+    animation: bubbleMoveUp 3s ease-in-out infinite;
+}
+
+@keyframes bubbleMoveUp {
+    0% {
+        bottom: 0;
+    }
+    100% {
+        bottom: calc(100% - 265px);
+    }
+}
+
+.bubble:nth-child(1) {
+    left: 42%;
+    bottom: 0;
+}
