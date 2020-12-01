@@ -3,6 +3,7 @@
 # @Author : MYH
 # @File : 文字语音转换.py
 # @Software: PyCharm
+import pyttsx3
 
 
 def voiceToText():
@@ -10,8 +11,13 @@ def voiceToText():
     pass
 
 
-def textToVoice():
-    print("textToVoice")
+def textToVoice(note):
+    # print("textToVoice")
+    engine = pyttsx3.init()
+    engine.say(note)
+    engine.setProperty('rate', 80)
+    engine.setProperty('volume', 0.9)
+    engine.runAndWait()
     pass
 
 
@@ -21,7 +27,8 @@ if __name__ == '__main__':
         if a == "0":
             voiceToText()
         elif a == "1":
-            textToVoice()
+            b = input("请输入要转换的文本:")
+            textToVoice(b)
         elif a == "2":
             break
         else:
