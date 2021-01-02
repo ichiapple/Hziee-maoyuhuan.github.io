@@ -1,0 +1,3 @@
+[console_scripts]
+ppcv = ppcv.main:main
+

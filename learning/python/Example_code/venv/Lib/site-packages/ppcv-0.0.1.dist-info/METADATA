@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: ppcv
+Version: 0.0.1
+Summary: None
+Home-page: https://www.paddlepaddle.org.cn/
+Author: dltp-sz
+Author-email: dltp-sz@baidu.com
+License: Apache 2.0
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/plain
+
+None
+
+

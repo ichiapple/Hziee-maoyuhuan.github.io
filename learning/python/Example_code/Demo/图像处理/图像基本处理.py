@@ -43,4 +43,4 @@ img9 = img.copy()
 drawImage = ImageDraw.Draw(img9)  # 加载要写文字的图片
 font = ImageFont.truetype("msyhl.ttc", size=80)  # 加载字体
 drawImage.text((50, 50), "Hello World", fill=color, font=font)  # 写上文字 参数分别为坐标 文本 颜色 字体
-img9.show()
+# img9.show()
