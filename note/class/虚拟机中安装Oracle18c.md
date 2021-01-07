@@ -25,8 +25,9 @@
         >   sudo yum -y localinstall oracle-database-preinstall-18c-1.0-1.el7.x86_64.rpm
     
     6.  查看Oracle用户密码
-	    >   id oracle
-    
+	    
+    >   id oracle
+	    
 	7. 
 	
 	8. 
