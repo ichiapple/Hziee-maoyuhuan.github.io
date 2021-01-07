@@ -1,0 +1,24 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--background-color);
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+.header {
+    width: 100vw;
+    height: var(--height-of-nav);
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.content {
+    width: 100vw;
+    /* 需要修改 */
+    height: 190vh;
+    background-color: greenyellow;
+    margin-top: var(--height-of-nav);
+}

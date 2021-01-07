@@ -1,0 +1,14 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+}
+
+:root {
+    --background-color: aquamarine;
+    --height-of-nav: 7vh;
+}
+
+::-webkit-scrollbar {
+    display: none;
+    /* Chrome Safari */
+}
