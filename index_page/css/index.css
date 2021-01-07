@@ -4,6 +4,7 @@ body {
     background-color: var(--background-color);
     box-sizing: border-box;
     overflow-x: hidden;
+    text-align: center;
 }
 
 .header {
@@ -21,4 +22,25 @@ body {
     height: 190vh;
     background-color: greenyellow;
     margin-top: var(--height-of-nav);
+}
+
+.content .main {
+    width: 80%;
+    height: 100%;
+    background-color: pink;
+}
+
+.content .main .introduce {
+    width: 700px;
+    height: 300px;
+    background-color: yellow;
+    float: left;
+    margin-left: 100px;
+    margin-top: 150px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.content .main .introduce_pic {
+    float: right;
 }

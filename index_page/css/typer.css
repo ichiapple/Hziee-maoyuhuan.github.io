@@ -1,0 +1,24 @@
+.text {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 60px;
+    color: whitesmoke;
+    font-weight: bold;
+    letter-spacing: 6px;
+}
+
+.text .shine {
+    color: black;
+    animation: flash 0.9s ease-in-out infinite;
+}
+
+@keyframes flash {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
