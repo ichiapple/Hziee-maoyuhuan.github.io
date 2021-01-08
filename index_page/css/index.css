@@ -43,4 +43,15 @@ body {
 
 .content .main .introduce_pic {
     float: right;
+    margin-right: 100px;
+    margin-top: 70px;
+}
+
+.content .main .introduce_pic .photo_frame {
+    padding: 20px;
+    background-color: green;
+}
+
+.content .main .introduce_pic .photo_frame img {
+    width: 400px;
 }
