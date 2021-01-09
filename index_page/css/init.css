@@ -1,14 +1,37 @@
+/* 总初始化文档 */
+
 * {
     margin: 0 auto;
     padding: 0;
 }
 
+
+/* 自定义参数 */
+
 :root {
     --background-color: aquamarine;
     --height-of-nav: 7vh;
+    --background-image: url("../img/background.jpg");
 }
 
+
+/* 取消滑动条 仍可滑动 */
+
 ::-webkit-scrollbar {
-    display: none;
     /* Chrome Safari */
+    display: none;
+}
+
+
+/* 去除a标签下划线 */
+
+a {
+    text-decoration: none;
+}
+
+
+/* 取消ul的圆点 */
+
+li {
+    list-style: none;
 }
