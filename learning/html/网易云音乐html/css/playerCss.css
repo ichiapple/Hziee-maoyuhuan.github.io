@@ -1,0 +1,182 @@
+/*
+    @Time       : 2020/7/25 7:47 
+    @Author     : MYH            
+    @File       : playerCss.css
+    @Software   : WebStorm
+*/
+
+
+/*总体设计*/
+body {
+    overflow: hidden;
+}
+
+#player {
+    width: 60%;
+    height: 73vh;
+    margin: 12vh auto;
+    background-color: orangered;
+    border-radius: 30px;
+    box-shadow: black 0 0 120px;
+}
+
+#playerHeader {
+    /*background-color: aqua;*/
+    width: 100%;
+    height: 8vh;
+}
+
+#playerContent {
+    background-color: whitesmoke;
+    width: 100%;
+    height: 60vh;
+}
+
+#playerFoot {
+    /*background-color: yellow;*/
+    width: 100%;
+    height: 5vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: Center;
+}
+
+#logo {
+    /*background-color: aquamarine;*/
+    width: 15%;
+    height: 100%;
+    margin-left: 5%;
+    float: left;
+}
+
+#img_logo {
+    width: 90%;
+    height: 90%;
+    margin: 5px;
+}
+
+/*分布设计*/
+#search {
+    /*background-color: chartreuse;*/
+    width: 300px;
+    height: 100%;
+    margin-right: 5%;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: Center;
+}
+
+#musicList {
+    width: 30%;
+    height: 100%;
+    /*background-color: lightcoral;*/
+    float: left;
+    overflow: scroll;
+    overflow-x: hidden;
+    line-height: 30px;
+}
+
+#musicList ul {
+    list-style: none;
+    margin: 0;
+    padding: 0 10px 0 10px;
+}
+
+#musicList ul li {
+    line-height: 30px;
+    border-radius: 10px;
+    /*background-color: yellow;*/
+    margin: 8px 0;
+    padding: 10px;
+    border: 1px solid #000;
+}
+
+#musicList ul li img {
+    width: 20px;
+    height: 20px;
+}
+#musicList ul li .mvBtn{
+    text-decoration: none;
+    font-weight: bolder;
+    color: black;
+}
+
+#albumShow {
+    width: 40%;
+    height: 100%;
+    /*background-color: blueviolet;*/
+    float: left;
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+#albumShow #albumShowImg {
+    width: 90%;
+    margin-top: 8vh;
+    border-radius: 15px;
+    box-shadow: black 0 0 60px;
+}
+
+#comment {
+    width: 30%;
+    height: 100%;
+    /*background-color: deeppink;*/
+    float: left;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+#comment ul {
+    list-style: none;
+    margin: 0;
+    padding: 0 10px 0 10px;
+}
+
+#comment ul li {
+    border: 1px solid #000;
+    margin: 10px auto;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#comment ul li .commentImg {
+    width: 35px;
+    height: 35px;
+}
+
+#playerFoot audio {
+    width: 95%;
+    height: 60%;
+}
+
+
+#shadow {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.29);
+    text-align: center;
+}
+
+#shadow video {
+    z-index: 99;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+#shadow #hint {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.18);
+}
