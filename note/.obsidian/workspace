@@ -1,0 +1,139 @@
+{
+  "main": {
+    "id": "cb4e43613904f752",
+    "type": "split",
+    "children": [
+      {
+        "id": "230745af9af5a31c",
+        "type": "leaf",
+        "dimension": 34.96993987975952,
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "class/笔记目录.md",
+            "mode": "source"
+          }
+        },
+        "group": "62fb7b3fbfde8e6f"
+      },
+      {
+        "id": "43b38a0ea694df87",
+        "type": "leaf",
+        "dimension": 65.03006012024048,
+        "active": true,
+        "state": {
+          "type": "localgraph",
+          "state": {
+            "file": "class/笔记目录.md",
+            "options": {
+              "collapse-filter": true,
+              "search": "",
+              "localJumps": 1,
+              "localBacklinks": true,
+              "localForelinks": true,
+              "localInterlinks": false,
+              "showTags": false,
+              "showAttachments": false,
+              "hideUnresolved": false,
+              "collapse-color-groups": true,
+              "colorGroups": [],
+              "collapse-display": true,
+              "showArrow": false,
+              "textFadeMultiplier": 0,
+              "nodeSizeMultiplier": 1,
+              "lineSizeMultiplier": 1,
+              "collapse-forces": true,
+              "centerStrength": 0.518713248970312,
+              "repelStrength": 10,
+              "linkStrength": 1,
+              "linkDistance": 250,
+              "scale": 1.6525891396787273,
+              "close": true
+            }
+          }
+        },
+        "group": "62fb7b3fbfde8e6f"
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "df8577d111f013b1",
+    "type": "split",
+    "children": [
+      {
+        "id": "ce1147623f9aadcd",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "da00875cf1f7b5ab",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "ba4689e0d5a7e05b",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "7e74ff029ea67257",
+    "type": "split",
+    "children": [
+      {
+        "id": "9eeacf61a0a09ca8",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "efb3dbd5b186db67",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "class/笔记目录.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "lastOpenFiles": [
+    "class/笔记目录.md",
+    "class/软件工程 复习.md",
+    "class/test.md",
+    "class/数据库系统设计开发数据库应用与设计(上应用下设计) 课程笔记.md",
+    "class/计算机组成原理与系统结构.md",
+    "class/计算机组成结构 课程笔记.md",
+    "class/计算机网络.md",
+    "class/Android Studio学习.md",
+    "class/虚拟机中安装Oracle18c.md",
+    "class/计算机组成原理_视频.md"
+  ]
+}
