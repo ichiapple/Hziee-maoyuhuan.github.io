@@ -63,3 +63,23 @@ p{
     header CSS
 */
 
+header nav {
+    width: 100vw;
+    height: 80px;
+    background-color: yellow;
+}
+
+header nav .container .logo{
+    width: 200px;
+    display: inline-block;
+    background-color: green;
+}
+
+header nav .container .logo a{
+    background-color: pink;
+}
+
+header nav .container .logo a img{
+    height: 90%;
+    width: 300px;
+}
