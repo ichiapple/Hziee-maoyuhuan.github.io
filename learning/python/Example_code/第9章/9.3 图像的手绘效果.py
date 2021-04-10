@@ -45,8 +45,12 @@ import numpy as np
 # 定义了方位角和俯视角和深度权值,角度设定和单位向量构成了基础坐标系 用三维立体考虑问题
 vec_el = np.pi / 2.2  # 光源的俯视角度 弧度制
 vec_az = np.pi / 4.  # 光源的方位角度 弧度制
+
+# vec_el = np.pi / 2.  # 光源的俯视角度 弧度制
+# vec_az = np.pi / 4.  # 光源的方位角度 弧度制
+
 depth = 10.  # (0-100) 深度值
-im = Image.open("file/muke.jpg").convert("L")  # 打开图像并进行转换
+im = Image.open("file/yao.jpg").convert("L")  # 打开图像并进行转换
 a = np.asarray(im).astype(float)  # 转换为一个浮点型的数组
 grad = np.gradient(a)  # 取图像的灰度梯度值
 grad_x, grad_y = grad  # 分别取横向和纵向的梯度值

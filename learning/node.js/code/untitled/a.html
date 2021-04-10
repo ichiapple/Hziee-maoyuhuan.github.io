@@ -1,0 +1,159 @@
+<!-- 
+    @Time       : 2021/3/27 18:01 
+    @Author     : MYH            
+    @File       : a.html 
+    @Software   : WebStorm
+-->
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Language" content="zh-CN" />
+    <title>css打造鼠标触发效果</title>
+    <style type="text/css">
+        <!--
+        body {
+            margin: 0;
+            padding: 0;
+            color: #000;
+            font-size: 12px;
+            line-height: 160%;
+            text-align: left;
+            height: 100%;
+            font-family: '宋体',Tahoma ,arial,verdana,sans-serif,'Lucida Grande','Lucida Sans Unicode';
+        }
+        *{ margin:0; padding:0;}
+        h2,h2 a:link,h2 a:hover,h2 a:visited{
+            font-size: 14px;
+            text-decoration: none;
+            color: #000000;
+        }
+        .kw_from {
+            padding:20px 0 0 0px;
+            margin: auto;
+            height: 300px;
+            overflow: hidden;
+            width: 650px;
+        }
+        .kw_from .sbtn{
+            float:left;
+            width:80px;
+            padding: 16px 0 0 0;
+        }
+        .kw_from .searchMore{
+            float:left;
+            width:80px;
+            padding: 4px;
+        }
+        #searchNav {
+            width:430px;
+            float: left;
+        }
+        #searchNav #conter1, #searchNav #conter3{
+            float:left;
+            width:250px;
+        }
+        #searchNav #conter2, #searchNav #conter4{
+            float:left;
+            width:180px;
+        }
+        #searchNav ul {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+        #searchNav li {
+            float: left;
+        }
+        #searchNav li ul {
+            display: none;
+            top: 20px;
+        }
+        #searchNav li:hover ul, #searchNav li.over ul {
+            display: block;
+            float:left;
+        }
+        #searchNav ul li a{
+            float:left;
+            display:block;
+            font-size:12px;
+            padding:3px;
+            text-decoration: none;
+            color: #777;
+        }
+        #searchNav ul li a:hover{
+            background-color:#f4f4f4;
+        }
+        #searchNav #jobKw{
+            width:220px;
+            height:18px;
+        }
+        #searchNav #cityKw{
+            width:130px;
+            height:18px;
+        }
+        -->
+    </style>
+    <script type="text/javascript">
+            startList = function() {
+            if (document.all&&document.getElementById) {
+                navRoot = document.getElementById("searchNav");
+                for (i=0; i<navRoot.childNodes.length; i++) {
+                    node = navRoot.childNodes[i];
+                    if (node.nodeName=="LI") {
+                        node.onmouseover=function() {
+                            this.className+=" over";
+                        }
+                        node.onmouseout=function() {
+                            this.className=this.className.replace(" over", "");
+                        }
+                    }
+                }
+            }
+        }
+        window.onload=startList;
+    </script>
+</head>
+<body>
+<div class="kw_from">
+    <form action="/search.html" method="get" name="searchForm" id="searchForm" onsubmit="return check()">
+        <ul id="searchNav">
+            <li id="conter1"><h2>找什么</h2>
+                <input id="jobKw" name="jobKw" type="text" />
+                <ul id="conter3">
+                    <li><a href="#" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" >会计</a> </li>
+                    <li><a href="#" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" >网页设计</a></li>
+                    <li><a href="#" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" >翻译</a></li>
+                    <li><a href="#" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" >家教</a></li>
+                    <li><span class="moreCity"><a href="#" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" >更多&gt;&gt; </a></span></li>
+                </ul>
+            </li>
+            <li id="conter2"><h2>在那里</h2>
+                <input id="cityKw" name="cityKw" type="text" />
+                <ul id="conter4">
+                    <li><a href="#" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" >北京</a> </li>
+                    <li><a href="#" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" >上海</a></li>
+                    <li><a href="#" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" >广州</a></li>
+                    <li><a href="#" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" >深圳</a></li>
+                    <li><a href="#" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" >南京</a></li>
+                    <li><a href="#" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" >天津</a></li>
+                    <li><a href="#" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" >杭州</a></li>
+                    <li><a href="#" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" >成都</a></li>
+                    <li><a href="#" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" >重庆</a></li>
+                    <li><a href="#" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" >武汉</a></li>
+                    <li><a href="#" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" >西安</a></li>
+                    <li><a href="#" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" >沈阳</a></li>
+                    <li><span class="moreCity"><a href="#" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" >更多城市&gt;&gt;</a></span></li>
+                </ul>
+            </li>
+        </ul>
+        <div class="sbtn">
+            <input name="submit" type="submit" class="btn4" style="margin:0px 15px 2px 0;" value="搜索工作" />
+        </div>
+        <div class="searchMore">
+            <a href="search_expert.html" rel="external nofollow" >高级搜索</a><br /><a href="search_sort.html" rel="external nofollow" >分类搜索</a>   </div>
+    </form>
+</div>
+</body>
+</html>
