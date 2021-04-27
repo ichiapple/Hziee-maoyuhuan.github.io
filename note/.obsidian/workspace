@@ -4,55 +4,13 @@
     "type": "split",
     "children": [
       {
-        "id": "230745af9af5a31c",
+        "id": "018b73a28778f494",
         "type": "leaf",
-        "dimension": 34.96993987975952,
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "class/笔记目录.md",
-            "mode": "source"
-          }
-        },
-        "group": "62fb7b3fbfde8e6f"
-      },
-      {
-        "id": "43b38a0ea694df87",
-        "type": "leaf",
-        "dimension": 65.03006012024048,
         "active": true,
         "state": {
-          "type": "localgraph",
-          "state": {
-            "file": "class/笔记目录.md",
-            "options": {
-              "collapse-filter": true,
-              "search": "",
-              "localJumps": 1,
-              "localBacklinks": true,
-              "localForelinks": true,
-              "localInterlinks": false,
-              "showTags": false,
-              "showAttachments": false,
-              "hideUnresolved": false,
-              "collapse-color-groups": true,
-              "colorGroups": [],
-              "collapse-display": true,
-              "showArrow": false,
-              "textFadeMultiplier": 0,
-              "nodeSizeMultiplier": 1,
-              "lineSizeMultiplier": 1,
-              "collapse-forces": true,
-              "centerStrength": 0.518713248970312,
-              "repelStrength": 10,
-              "linkStrength": 1,
-              "linkDistance": 250,
-              "scale": 1.6525891396787273,
-              "close": true
-            }
-          }
-        },
-        "group": "62fb7b3fbfde8e6f"
+          "type": "empty",
+          "state": {}
+        }
       }
     ],
     "direction": "vertical"
@@ -108,7 +66,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "class/笔记目录.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
